@@ -1,0 +1,14 @@
+body {
+        background-image: url('http://172.81.214.135/static/img/bgd/qwq.jpeg');
+        background-repeat:repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #6c757d; }
+.white-box {padding: 20px;   
+background: #fff;
+border:2px solid;    
+border-top: none; 
+border-radius:25px;}

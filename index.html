@@ -1,10 +1,30 @@
-<span id="totalSecond">5</span>
-<h1>正在连接线路...</h1>
-<script language="javascript" type="text/javascript"> 
-var second = totalSecond.innerText; 
-setInterval("redirect()", 1000); 
-function redirect(){ 
-totalSecond.innerText=--second; 
-if(second<0) location.href='http://172.81.214.135/index/'; 
-} 
-</script>
+<!doctype html>
+<html lang="en">
+<head>
+    <title><前往Clockの博客></title>
+    <meta charset="UTF-8">
+	<meta name="referrer" content="never">
+    <link rel="icon" type="image/x-icon" href="/static/img/me/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+</head>
+
+<body>
+<div class = 'container'>
+	<div class='white-box'>
+	<span id="totalSecond">5</span>
+	<h1>正在连接线路...</h1>
+	<script language="javascript" type="text/javascript"> 
+	var second = totalSecond.innerText; 
+	setInterval("redirect()", 1000); 
+	function redirect(){ 
+	totalSecond.innerText=--second; 
+	if(second<0) location.href='http://172.81.214.135/index/'; 
+	} 
+	</script>
+	</div>
+</div>
+</body>
+</html>
