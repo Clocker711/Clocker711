@@ -1,7 +1,9 @@
-<body>
+<span id="totalSecond">5</span>
 <script language="javascript" type="text/javascript"> 
-// 以下方式直接跳转 window.location.href='hello.html';
-// 以下方式定时跳转
-setTimeout("javascript:location.href='http://172.81.214.135/index/' , 5000); 
+var second = totalSecond.innerText; 
+setInterval("redirect()", 1000); 
+function redirect(){ 
+totalSecond.innerText=--second; 
+if(second<0) location.href='http://172.81.214.135/index/'; 
+} 
 </script>
-</body>
