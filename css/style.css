@@ -6,9 +6,11 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.9;
-  color: #6c757d; }
+  color: #6c757d; 
+       text-align: center;}
 .white-box {padding: 20px;   
 background: #fff;
 border:2px solid;    
 border-top: none; 
-border-radius:25px;}
+border-radius:25px;
+text-align: center;}
