@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+     <!-- Site Metas -->
+    <title>Clockerの小院</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <title>Clockerの导航</title>
+</head>
+<script>
+    function f1(){
+        var object =(document.getElementById("txt").value)?   document.getElementById("txt").value :   '水';
+        var event =(document.getElementById("txt_2").value)?   document.getElementById("txt_2").value :   '能喝';
+       var cause =(document.getElementById("txt_3").value)?  document.getElementById("txt_3").value :   '可以喝的';
+       var text = object+event+'是怎么回事呢？'+object+'相信大家都很熟悉，但是'+object+event+'是怎么回事呢，下面就让小编带大家一起了解吧。'+object+event+ '其实就是'+cause+',大家可能会很惊讶'+object+'怎么会'+event+'呢？但事实就是这样，小编也感到非常惊讶。这就是关于'+object+event+'的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！';
+       document.getElementById('txt_4').innerHTML= text
+
+    }
+</script>
+<body>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">主站</a></li>
+        <li class="breadcrumb-item"><a href="#">目录</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Clocker</li>
+      </ol>
+    </nav>
+    <div class="container">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">主语</span>
+          </div>
+          <input type="text" id='txt'class="form-control" placeholder="水"  aria-describedby="inputGroup-sizing-default">
+        </div>
+    <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">事件</span>
+          </div>
+          <input type="text" id='txt_2' class="form-control" placeholder="能喝" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">原因</span>
+          </div>
+          <input type="text" id='txt_3' class="form-control" placeholder="可以喝的" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <button type="button" onclick="f1()" class="btn btn-primary btn-lg btn-block">生成</button>
+    <div class="input-group mb-3">
+          <div class="card-header">输出</div>
+           <div class="card">
+          <div class="card-body" id="txt_4">
+          </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+</html>
