@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Clockerの加密</title>
+    <script src="js/my.js"></script>
+
+</head>
+
+<body>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">主页</a></li>
+    <li class="breadcrumb-item"><a href="clocker.html">Clockerの小院</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="words.html">营销号生成器</a></li>
+  </ol>
+</nav>
+<div class="container">
+    <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">输入</span>
+  </div>
+  <input type="text" id="input" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="这个无聊加密">
+</div>
+    <div class="row">
+    <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">密码子（建议1到50的整数）</span>
+  </div>
+  <input type="text" id="mimazi" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="11">
+</div>
+        <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">密码类型</span>
+  </div>
+  <input type="text" id="mima" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="垃圾">
+</div>
+    </div>
+    <div class="row">
+        <button class="btn btn-primary" onclick="jiami()" type="submit">加密</button>
+        <button class="btn btn-primary" onclick="jiema()" type="submit">解密</button>
+    </div>
+    <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">输出</span>
+  </div>
+  <p type="text" class="form-control" id="output" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+</div>
+</body>
+</html>
