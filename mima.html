@@ -21,7 +21,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default">输入</span>
   </div>
-  <input type="text" id="input" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="这个无聊加密">
+  <textarea id='input'class="form-control" aria-label="With textarea" rows=5>这个无聊加密</textarea>
 </div>
     <div class="row">
     <div class="input-group mb-3">
@@ -38,15 +38,18 @@
 </div>
     </div>
     <div class="row">
+	<div class='col-8'>
         <button class="btn btn-primary" onclick="jiami()" type="submit">加密</button>
+	</div>
+	<div class='col-3'>
         <button class="btn btn-primary" onclick="jiema()" type="submit">解密</button>
+	</div>
     </div>
     <div class="input-group mb-3">
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default">输出</span>
   </div>
-  <p type="text" class="form-control" id="output" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
+  <textarea id='output'class="form-control" aria-label="With textarea" rows=6></textarea>
 </div>
 </body>
 </html>
