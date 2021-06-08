@@ -33,7 +33,7 @@ function jiema() {
     bianliang()
     var list= txt.split('+');
     var jmst = '';list2=[];
-    console.log('获取',list);
+    //console.log('获取',list);
     for (i in list){
         if (list[i]) {var s = '';
             console.log(list[i]);

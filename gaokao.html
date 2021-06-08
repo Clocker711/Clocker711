@@ -1,0 +1,113 @@
+﻿﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>高考倒计时特效</title>
+
+<link type="text/css" href="static/css/style.css" rel="stylesheet" />
+	<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+<div class='container'>
+<h1 style="color:red;text-align: center;">距离2022年高考还有 </h1>
+
+<div class="row">
+	<div class="time">
+		<h1 id="days">00</h1>
+		<small>days</small>
+	</div>
+	<div class="time">
+		<h1 id="hours">00</h1>
+		<small>hours</small>
+	</div>
+	<div class="time">
+		<h1 id="minutes">00</h1>
+		<small>minutes</small>
+	</div>
+	<div class="time">
+		<h1 id="seconds">00</h1>
+		<small>seconds</small>
+	</div>
+</div>
+<div class = 'row'>
+<p style="color:yellow;text-shadow: 5px 5px 5px #FF0000; width: 100%;height: 45px;display: block;line-height: 45px;text-align: center;">《七言绝句》<br>
+孟郊<br>
+昔日龌龊不足夸，今朝放荡思无涯。<br>
+春风得意马蹄疾，一日看尽长安花。<br>
+《登科后》<br>
+未斟却已醉千盅，怪得新词似酒浓。<br>
+雪落梅园香入梦，状元今日披花红。<br>
+《喜仲微学士直右史》<br>
+宋祁<br>
+殿栋洪纷冒紫霏，新闻再拜上丹墀。<br>
+日高中禁仙香馥，辇度横街赭伞移。<br>
+宝校对呈天厩马，轻兵看阅羽林儿。<br>
+因君此际磨坳墨，偏忆当年第二螭。<br>
+《贺高中书兼崇政殿说书三首》<br>
+岳珂<br>
+日月熙明地，风云际会辰。<br>
+紫宫瞻象逼，丹房喜情亲。<br>
+逊志贤谟在，仔肩圣德新。<br>
+耕宰须负鼎，从此学商臣。<br>
+《贺高中书兼崇政殿说书三首》<br>
+岳珂<br>
+迩联咨夕访，清问切辰猷。<br>
+博学今中垒，遐征古上游。<br>
+齿寒当预计，身履即良筹。<br>
+颇牧岂云远，隐忧其有瘳。<br>
+</p>
+</div>
+</div>
+
+
+
+<script>
+const body = document.body;
+const endTime = new Date('June 7 2022 00:00:00');  // 设置到期日期
+const daysEl = document.getElementById('days');
+const hoursEl = document.getElementById('hours');
+const minutesEl = document.getElementById('minutes');
+const secondsEl = document.getElementById('seconds');
+
+
+setInterval(updateCountdown, 1000)
+setInterval(createSnowFlake, 50);
+
+
+function updateCountdown() {
+	const startTime = new Date();
+	const diff = endTime - startTime;
+	const days = Math.floor(diff / 1000 / 60 / 60 / 24);
+	const hours = Math.floor(diff / 1000 / 60 / 60) % 24;
+	const minutes = Math.floor(diff / 1000 / 60) % 60;
+	const seconds = Math.floor(diff / 1000) % 60;
+	daysEl.innerHTML = days;
+	hoursEl.innerHTML = hours < 10 ? '0'+hours : hours;
+	minutesEl.innerHTML = minutes < 10 ? '0'+minutes : minutes;
+	secondsEl.innerHTML = seconds < 10 ? '0'+seconds : seconds;
+}
+
+function createSnowFlake() {
+	const snow_flake = document.createElement('i');
+	snow_flake.classList.add('fas');
+	snow_flake.classList.add('fa-snowflake');
+	snow_flake.style.left = Math.random() * window.innerWidth + 'px';
+	snow_flake.style.animationDuration = Math.random() * 3 + 2 + 's'; // between 2 - 5 seconds
+	snow_flake.style.opacity = Math.random();
+	snow_flake.style.fontSize = Math.random() * 10 + 10 + 'px';
+	
+	document.body.appendChild(snow_flake);
+	
+	setTimeout(() => {
+		snow_flake.remove();
+	}, 5000)
+}
+
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+
+</div>
+</body>
+</html>
