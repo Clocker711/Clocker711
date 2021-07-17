@@ -7,11 +7,7 @@
 
 body {
 	background-image:linear-gradient(to right, #fbc2eb, #a6c1ee); ;
-	color: #fff;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;	
+	
 	font-family: 'Muli', sans-serif;
 	text-align: center;
 }
@@ -22,9 +18,7 @@ body {
 }
 
 .cdiv{
-     width: auto;
-     height: auto;
-     margin: 0 auto;
+     text-align: center;
  }
 .time {
 	display: flex;
