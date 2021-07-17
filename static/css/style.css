@@ -6,7 +6,7 @@
 }
 
 body {
-	background-image: url(../1.jpg) ;
+	background-image:linear-gradient(to right, #fbc2eb, #a6c1ee); ;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -21,25 +21,30 @@ body {
 	display: flex;
 }
 
+.cdiv{
+     width: auto;
+     height: auto;
+     margin: 0 auto;
+ }
 .time {
 	display: flex;
-	font-size: 1.2em;
+	font-size: 1em;
 	flex-direction: column;
-	margin: 0 15px;
+	margin: 0 8px;
 	text-align: center;
 }
 
 .time h1 {
 	margin-bottom: 0;
-	color: yellow;
-	font-size: 8em;
-	background:green;
+	color: white;
+	font-size: 5em;
+	background: linear-gradient(to right, #fbc2eb, #a6c1ee);
 	border-radius: 15px 50px;
 	box-shadow: 10px 10px 5px #888888;
 }
 
 .time small {
-	color: #ccc;
+	color: #fff;
 	text-align: center;
 
 }
